@@ -6,7 +6,7 @@ environment *amazing*!
 **Share your Favorite Settings!** This isn't meant to be a readonly repository. Have
 something you love about your PhpStorm setup? Create a pull request and share it.
 
-First, a thanks to @nicwortel for this https://github.com/nicwortel/phpstorm-ide-config
+First, a thanks to [nicwortel](https://github.com/nicwortel) for this https://github.com/nicwortel/phpstorm-ide-config
 repository, which contains some nice settings (including stuff that we don't have
 here). He also did a realy nice job with his README, and I've borrowed parts of it
 shamelessly.
