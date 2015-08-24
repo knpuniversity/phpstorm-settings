@@ -1,27 +1,3 @@
-# phpstorm-symfony2-template
-Live template for Symfony 2 on Phpstorm
-
-This is a [PhpStorm](www.jetbrains.com/phpstorm/) live template which includes handy snippets for doing [Symfony2](www.symfony.com) framework development.
-
-
-Snippets are copied from [https://github.com/raulfraile/sublime-symfony2](https://github.com/raulfraile/sublime-symfony2) for sublime text.
-
-## Installation ##
-
-copy Symfony2.xml file into your live template config folder
-
-Linux :
-
-```
-~/.WebIde80/config/templates/
-```
-
-Windows :
-```
-C:\Users\<username>\.WebIde80\config\templates
-```
-
-
 ## Shortcuts from raulfraile, applied on Phpstorm by Pouzor ##
 
 All shortcuts start with the `sf` prefix and are both short and intuitive:
