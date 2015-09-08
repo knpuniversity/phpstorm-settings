@@ -63,6 +63,254 @@ didn't you???)
 That's it! In the PhpStorm Settings, under "Editor > Live Templates", you should
 see the new "symfony" live templates.
 
+## Live Templates
+
+### Frontend Templates
+
+#### lorem
+
+```php
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+```
+
+### Symfony Templates
+
+#### formhandle
+
+Adds Controller form handling code
+
+```php
+$form->handleRequest($request);
+if ($form->isValid()) {
+    // todo - do some work, like saving stuff
+
+    $this->addFlash('success', '$SUCCESSMESSAGE$');
+
+    return $this->redirectToRoute('$ROUTENAME$', array());
+}
+```
+
+#### formrow
+
+Renders form_row in Twig
+
+```php
+{{ form_row(form.$FIELD$) }}
+```
+
+#### formrowfull
+
+Renders widget/label/errors
+
+```php
+<div class="form-control">
+    {{ form_label(form.$FIELD$) }}
+    {{ form_widget(form.$FIELD$) }}
+    {{ form_errors(form.$FIELD$) }}
+</div>
+```
+
+#### repofind
+
+Queries from a doctrine repository in a controller
+
+```php
+$this->getDoctrine()
+    ->getRepository('$REPO$')->$METHOD$($ARG$);
+```
+
+#### rendertwig
+
+Renders a Twig template from a controller
+
+```php
+return $this->render('$TEMPLATE$', array(
+    $END$
+));
+
+```
+
+#### 404unless
+
+Adds a 404 if statement in a controller
+
+```php
+if ($CONDITION$) {
+    throw $this->createNotFoundException($MESSAGE$);
+}
+```
+
+#### include
+
+{{ include('') }}
+
+```php
+{{ include('$TEMPLATE$') }}
+```
+
+#### method
+
+@Method
+
+```php
+@Method("$METHOD$")
+```
+
+#### path
+
+path('route_name', {args})
+
+```php
+{{ path('$ROUTE$', { $END$ }) }}
+```
+
+#### render
+
+render(controller())
+
+```php
+{{ render(controller('$CONTROLLER$', { $END$ })) }}
+```
+
+#### route
+
+@Route
+
+```php
+@Route("/$PATH$", name="$NAME$")
+```
+
+#### action
+
+Creates a controller action
+
+```php
+/**
+ * @Route("/$PATH$", name="$ROUTE_NAME$")
+ */
+public function $NAME$Action()
+{
+    $END$
+}
+```
+
+#### service
+
+Creates a YML service
+
+```php
+$NAME$:
+    class: $CLASS$
+    arguments:
+        - '$ARG1$'
+```
+
+#### tags
+
+Yaml service tags
+
+```php
+tags:
+    - { name: $TAGNAME$ }
+```
+
+#### createquery
+
+Query objects in repositories with DQL
+
+```php
+$this->getEntityManager()
+    ->createQuery('SELECT $ALIAS$
+                   FROM $ENTITY$ $ALIAS$
+                   WHERE $ALIAS$.$PROPERTY$ = :$PARAMETER$')
+    ->setParameter('$PARAMETER$', $ARGUMENT$)
+    ->execute();
+```
+
+#### getem
+
+```php
+$em = $this->getDoctrine()->getManager();
+```
+
+#### getrepo
+
+```php
+$em->getRepository('$ENTITY$');
+```
+
+#### doctrinecolumn
+
+Adds a property with @ORM annotations
+
+```php
+/**
+ * @ORM\Column(type="$TYPE$")
+ */
+private $$$PROPERTYNAME$;
+```
+
+#### trans
+
+```php
+{% trans %}{% endtrans %}
+```
+
+#### asset
+
+```php
+{{ asset('$PATH$') }}
+```
+
+#### asseticjs
+
+```php
+{% javascripts
+    '$PATH$'$END$
+%}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+```
+
+#### asseticcss
+
+```php
+{% stylesheets
+    '$PATH$'$END$
+    filter='cssrewrite'
+%}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+{% endstylesheets %}
+```
+
+#### xmlservices
+
+```php
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="$SERVICEID$" class="$CLASS$" />
+    </services>
+</container>
+```
+
+#### yamlroute
+
+```php
+$NAME$:
+    path:   /$PATH$
+    defaults:  { _controller: $CONTROLLER$ }
+```
+
 ## Credits
 
 A number of people have contributed to this repository. Additionally, some templates

@@ -1,0 +1,12 @@
+{
+    "name": "knpuniversity/phpstorm-settings",
+    "require": {
+        "symfony/finder": "^2.7"
+    },
+    "authors": [
+        {
+            "name": "Ryan Weaver",
+            "email": "ryan@knpuniversity.com"
+        }
+    ]
+}
