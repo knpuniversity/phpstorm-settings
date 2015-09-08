@@ -82,7 +82,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 #### formhandle
 
-Adds Controller form handling code
+Adds controller form-handling code
 
 ```php
 $form->handleRequest($request);
@@ -96,8 +96,6 @@ if ($form->isValid()) {
 ```
 
 #### formrow
-
-Renders form_row in Twig
 
 ```php
 {{ form_row(form.$FIELD$) }}
@@ -137,7 +135,7 @@ return $this->render('$TEMPLATE$', array(
 
 #### 404unless
 
-Adds a 404 if statement in a controller
+404 if statement for your controller
 
 ```php
 if ($CONDITION$) {
@@ -147,15 +145,11 @@ if ($CONDITION$) {
 
 #### include
 
-{{ include('') }}
-
 ```php
 {{ include('$TEMPLATE$') }}
 ```
 
 #### method
-
-@Method
 
 ```php
 @Method("$METHOD$")
@@ -163,15 +157,11 @@ if ($CONDITION$) {
 
 #### path
 
-path('route_name', {args})
-
 ```php
 {{ path('$ROUTE$', { $END$ }) }}
 ```
 
 #### render
-
-render(controller())
 
 ```php
 {{ render(controller('$CONTROLLER$', { $END$ })) }}
@@ -179,15 +169,13 @@ render(controller())
 
 #### route
 
-@Route
-
 ```php
 @Route("/$PATH$", name="$NAME$")
 ```
 
 #### action
 
-Creates a controller action
+Creates a controller action.
 
 ```php
 /**
@@ -255,12 +243,6 @@ Adds a property with @ORM annotations
 private $$$PROPERTYNAME$;
 ```
 
-#### trans
-
-```php
-{% trans %}{% endtrans %}
-```
-
 #### asset
 
 ```php
@@ -290,6 +272,8 @@ private $$$PROPERTYNAME$;
 
 #### xmlservices
 
+Generates an XML services file
+
 ```php
 <?xml version="1.0" ?>
 
@@ -304,6 +288,8 @@ private $$$PROPERTYNAME$;
 ```
 
 #### yamlroute
+
+YAML route
 
 ```php
 $NAME$:

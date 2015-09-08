@@ -1,5 +1,5 @@
 <templateSet group="knp_frontend">
-  <template name="lorem" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#10;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&#10;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&#10;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&#10;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&#10;proident, sunt in culpa qui officia deserunt mollit anim id est laborum." toReformat="true" toShortenFQNames="true">
+  <template name="lorem" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod&#10;tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,&#10;quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&#10;consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse&#10;cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non&#10;proident, sunt in culpa qui officia deserunt mollit anim id est laborum." description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
