@@ -1,15 +1,12 @@
-# PhpStorm Settings (to make you fly)
+# PhpStorm Live Templates (+ other settings)
 
-This repository includes various configuration that can help make your PhpStorm
-environment *amazing*!
+This repository includes [live templates](http://knpuniversity.com/screencast/phpstorm/live-templates)
+for PhpStorm (and may contain other settings in the future).
 
 **Share your Favorite Settings!** This isn't meant to be a readonly repository. Have
 something you love about your PhpStorm setup? Create a pull request and share it.
 
-First, a thanks to [nicwortel](https://github.com/nicwortel) for this https://github.com/nicwortel/phpstorm-ide-config
-repository, which contains some nice settings (including stuff that we don't have
-here). He also did a realy nice job with his README, and I've borrowed parts of it
-shamelessly.
+[See the Live Templates](#live-templates)
 
 ## Installation
 
@@ -298,6 +295,11 @@ $NAME$:
 ```
 
 ## Credits
+
+First, a thanks to [nicwortel](https://github.com/nicwortel) for this https://github.com/nicwortel/phpstorm-ide-config
+repository, which contains some nice settings (including stuff that we don't have
+here). He also did a really nice job with his README, and I've borrowed parts of it
+shamelessly.
 
 A number of people have contributed to this repository. Additionally, some templates
 were adapted from https://github.com/raulfraile/sublime-symfony2.
