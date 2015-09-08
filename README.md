@@ -62,3 +62,8 @@ didn't you???)
 
 That's it! In the PhpStorm Settings, under "Editor > Live Templates", you should
 see the new "symfony" live templates.
+
+## Credits
+
+A number of people have contributed to this repository. Additionally, some templates
+were adapted from https://github.com/raulfraile/sublime-symfony2.

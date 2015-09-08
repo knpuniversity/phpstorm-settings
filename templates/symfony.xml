@@ -334,8 +334,10 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="action" value="public function $NAME$Action(Request $request)&#10;{&#10;    $END$&#10;}" description="Creates a controller action" toReformat="true" toShortenFQNames="true">
+  <template name="action" value="/**&#10; * @Route(&quot;/$PATH$&quot;, name=&quot;$ROUTE_NAME$&quot;)&#10; */&#10;public function $NAME$Action()&#10;{&#10;    $END$&#10;}" description="Creates a controller action" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROUTE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -432,185 +434,24 @@
     <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAMETER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGUMENT" expression="" defaultValue="" alwaysStopAt="true" />
-  </template>
-  <template name="sfcontroller" value="use Symfony\Bundle\FrameworkBundle\Controller\Controller;&#10;&#10;class DefaultController extends Controller&#10;{&#10;    public function indexAction()&#10;    {&#10;        return $this-&gt;render('.html.twig');&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfcontrollera" value="use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;&#10;use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;&#10;use Symfony\Bundle\FrameworkBundle\Controller\Controller;&#10;&#10;class DefaultController extends Controller&#10;{&#10;    /**&#10;     * @Route(&quot;/&quot;, name=&quot;&quot;)&#10;     * @Template()&#10;     */&#10;    public function indexAction()&#10;    {&#10;&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfaction" value="public function indexAction()&#10;{&#10;    return $this-&gt;render('.html.twig');&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfactiona" value="/**&#10; * @Route(&quot;/&quot;, name=&quot;&quot;)&#10; * @Template()&#10; */&#10;public function indexAction()&#10;{&#10;&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfem" value="$em = $this-&gt;getDoctrine()-&gt;getManager();" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfrepo" value="$em-&gt;getRepository('Bundle:Repository');" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfforward" value="$this-&gt;forward('Bundle:Controller:action', array(), array());" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfredirect" value="$this-&gt;redirect($this-&gt;generateUrl('route', array()));" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfrender" value="$this-&gt;render('Bundle:Folder:template.html.twig', array());" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfgetsession" value="$this-&gt;getRequest()-&gt;getSession();" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfsetflash" value="$this-&gt;get('session')-&gt;getFlashBag()-&gt;add('type', 'message');" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdump" value="\Doctrine\Common\Util\Debug::dump();" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfcommand" value="use Symfony\Component\Console\Command\Command;&#10;use Symfony\Component\Console\Input\InputInterface;&#10;use Symfony\Component\Console\Output\OutputInterface;&#10;&#10;class DefaultCommand extends Command&#10;{&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    protected function configure()&#10;    {&#10;        $this&#10;            -&gt;setName('default:command')&#10;            -&gt;setDescription('Default description')&#10;        ;&#10;    }&#10;&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    protected function execute(InputInterface $input, OutputInterface $output)&#10;    {&#10;&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfcommandca" value="use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;&#10;use Symfony\Component\Console\Input\InputInterface;&#10;use Symfony\Component\Console\Output\OutputInterface;&#10;&#10;class DefaultCommand extends ContainerAwareCommand&#10;{&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    protected function configure()&#10;    {&#10;        $this&#10;            -&gt;setName('default:command')&#10;            -&gt;setDescription('Default description')&#10;        ;&#10;    }&#10;&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    protected function execute(InputInterface $input, OutputInterface $output)&#10;    {&#10;&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfentityclass" value="use Doctrine\ORM\Mapping as ORM;&#10;use Symfony\Component\Validator\Constraints as Assert;&#10;&#10;/**&#10; * @ORM\Entity(repositoryClass=&quot;&quot;)&#10; * @ORM\Table(name=&quot;&quot;)&#10; */&#10;class Entity&#10;{&#10;    /**&#10;     * @ORM\Id()&#10;     * @ORM\Column(type=&quot;integer&quot;)&#10;     * @ORM\GeneratedValue(strategy=&quot;AUTO&quot;)&#10;     */&#10;    protected $id;&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdocumentclass" value="use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;&#10;use Symfony\Component\Validator\Constraints as Assert;&#10;&#10;/**&#10; * @MongoDB\Document(collection=&quot;&quot;, repositoryClass=&quot;&quot;)&#10; */&#10;class Document&#10;{&#10;    /**&#10;     * @MongoDB\Id()&#10;     */&#10;    protected $id;&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfrepository" value="use Doctrine\ORM\EntityRepository;&#10;&#10;class EntityNameRepository extends EntityRepository&#10;{&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfidcolumn" value="/**&#10; * @ORM\Column(name=&quot;id&quot;, type=&quot;integer&quot;, nullable=false)&#10; * @ORM\Id()&#10; * @ORM\GeneratedValue(strategy=&quot;IDENTITY&quot;)&#10; */&#10; private $id;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfstringcolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;string&quot;, length=255)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdecimalcolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;decimal&quot;, scale=2)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sftextcolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;text&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfintegercolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;integer&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfbooleancolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;boolean&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
     <context />
   </template>
-  <template name="sfsmallintcolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;smallint&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
+  <template name="getem" value="$em = $this-&gt;getDoctrine()-&gt;getManager();" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="sfbigintcolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;bigint&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
+  <template name="getrepo" value="$em-&gt;getRepository('$ENTITY$');" toReformat="false" toShortenFQNames="true">
+    <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="sfdatetimecolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;datetime&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
+  <template name="doctrinecolumn" value="/**&#10; * @ORM\Column(type=&quot;$TYPE$&quot;)&#10; */&#10;private $$$PROPERTYNAME$;" description="Adds a property with @ORM annotations" toReformat="false" toShortenFQNames="true">
+    <variable name="PROPERTYNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdatecolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;date&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sftimecolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;time&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sffloatcolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;float&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfarraycolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;array&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfobjectcolumn" value="/**&#10; * @ORM\Column(name=&quot;&quot;, type=&quot;object&quot;)&#10; */&#10; private $;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfform" value="use Symfony\Component\Form\AbstractType;&#10;use Symfony\Component\Form\FormBuilderInterface;&#10;use Symfony\Component\OptionsResolver\OptionsResolverInterface;&#10;&#10;class NameType extends AbstractType&#10;{&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function buildForm(FormBuilderInterface $builder, array $options)&#10;    {&#10;&#10;    }&#10;&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function setDefaultOptions(OptionsResolverInterface $resolver)&#10;    {&#10;        $resolver-&gt;setDefaults(array(&#10;            'data_class' =&gt; '',&#10;        ));&#10;    }&#10;&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function getName()&#10;    {&#10;        return 'name';&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdatatransformer" value="use Symfony\Component\Form\DataTransformerInterface;&#10;use Symfony\Component\Form\Exception\UnexpectedTypeException;&#10;use Symfony\Component\Form\Exception\TransformationFailedException;&#10;&#10;class NameTransformer implements DataTransformerInterface&#10;{&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function transform($value)&#10;    {&#10;&#10;    }&#10;&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function reverseTransform($value)&#10;    {&#10;&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sftwigextension" value="class NameExtension extends \Twig_Extension&#10;{&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function getFilters()&#10;    {&#10;        return array();&#10;    }&#10;&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function getTests()&#10;    {&#10;        return array();&#10;    }&#10;&#10;    /**&#10;     * {@inheritdoc}&#10;     */&#10;    public function getFunctions()&#10;    {&#10;        return array();&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sftwigform" value="&lt;form class=&quot;&quot; action=&quot;{{ path('') }}&quot; method=&quot;post&quot; {{ form_enctype(form) }}&gt;&#10;    {{ form_errors(form) }}&#10;    {{ form_widget(form) }}&#10;    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;&#10;&lt;/form&gt;" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="true" />
-      <option name="HTML" value="true" />
-    </context>
-  </template>
-  <template name="sftwigrow" value="{{ form_row(form.) }}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="true" />
-      <option name="HTML" value="true" />
     </context>
   </template>
   <template name="trans" value="{% trans %}{% endtrans %}" toReformat="false" toShortenFQNames="true">
@@ -619,52 +460,40 @@
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sfasset" value="{{ asset('bundles/')}}" toReformat="false" toShortenFQNames="true">
+  <template name="asset" value="{{ asset('$PATH$') }}" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sfasseticjs" value="{% javascripts '@/Resources/public/js/*' %}&#10;    &lt;script type=&quot;text/javascript&quot; src=&quot;{{ asset_url }}&quot;&gt;&lt;/script&gt;&#10;{% endjavascripts %}" toReformat="false" toShortenFQNames="true">
+  <template name="asseticjs" value="{% javascripts&#10;    '$PATH$'$END$&#10;%}&#10;    &lt;script type=&quot;text/javascript&quot; src=&quot;{{ asset_url }}&quot;&gt;&lt;/script&gt;&#10;{% endjavascripts %}" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sfasseticcss" value="{% stylesheets 'bundles//css/*' filter='cssrewrite' %}&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ asset_url }}&quot; /&gt;&#10;{% endstylesheets %}" toReformat="false" toShortenFQNames="true">
+  <template name="asseticcss" value="{% stylesheets&#10;    '$PATH$'$END$&#10;    filter='cssrewrite'&#10;%}&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ asset_url }}&quot; /&gt;&#10;{% endstylesheets %}" toReformat="false" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
     </context>
   </template>
-  <template name="sfconstraint" value="use Symfony\Component\Validator\Constraint;&#10;&#10;/**&#10; * @Annotation&#10; */&#10;class NameConstraint extends Constraint&#10;{&#10;    public $message = '';&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfconstraintvalidator" value="use Symfony\Component\Validator\Constraint;&#10;use Symfony\Component\Validator\ConstraintValidator;&#10;&#10;class NameValidator extends ConstraintValidator&#10;{&#10;    public function validate($value, Constraint $constraint)&#10;    {&#10;&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdiconfiguration" value="use Symfony\Component\Config\Definition\Builder\TreeBuilder;&#10;use Symfony\Component\Config\Definition\ConfigurationInterface;&#10;&#10;class Configuration implements ConfigurationInterface&#10;{&#10;    public function getConfigTreeBuilder()&#10;    {&#10;        $treeBuilder = new TreeBuilder();&#10;        $rootNode = $treeBuilder-&gt;root('bundle_name');&#10;&#10;        $rootNode&#10;            -&gt;children()&#10;                -&gt;scalarNode('enabled')&#10;                    -&gt;setInfo('Enable the container extension')&#10;                    -&gt;setDefault(true)&#10;                -&gt;end()&#10;            -&gt;end()&#10;        ;&#10;&#10;        return $treeBuilder;&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdiextension" value="se Symfony\Component\Config\FileLocator;&#10;use Symfony\Component\DependencyInjection\ContainerBuilder;&#10;use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;&#10;use Symfony\Component\HttpKernel\DependencyInjection\Extension;&#10;&#10;class BundleExtension extends Extension&#10;{&#10;    public function load(array $configs, ContainerBuilder $container)&#10;    {&#10;        $config = $this-&gt;processConfiguration(new Configuration(), $configs);&#10;        if (false === $config['enabled']) {&#10;            return;&#10;        }&#10;&#10;        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));&#10;        $loader-&gt;load('services.xml');&#10;    }&#10;}" toReformat="false" toShortenFQNames="true">
-    <context>
-      <option name="PHP" value="true" />
-    </context>
-  </template>
-  <template name="sfdiservices" value="&lt;?xml version=&quot;1.0&quot; ?&gt;&#10;&#10;&lt;container xmlns=&quot;http://symfony.com/schema/dic/services&quot;&#10;    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;    xsi:schemaLocation=&quot;http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd&quot;&gt;&#10;&#10;    &lt;services&gt;&#10;        &lt;service id=&quot;id&quot; class=&quot;class&quot; /&gt;&#10;    &lt;/services&gt;&#10;&lt;/container&gt;" toReformat="false" toShortenFQNames="true">
+  <template name="xmlservices" value="&lt;?xml version=&quot;1.0&quot; ?&gt;&#10;&#10;&lt;container xmlns=&quot;http://symfony.com/schema/dic/services&quot;&#10;    xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;    xsi:schemaLocation=&quot;http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd&quot;&gt;&#10;&#10;    &lt;services&gt;&#10;        &lt;service id=&quot;$SERVICEID$&quot; class=&quot;$CLASS$&quot; /&gt;&#10;    &lt;/services&gt;&#10;&lt;/container&gt;" toReformat="false" toShortenFQNames="true">
+    <variable name="SERVICEID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="true" />
     </context>
   </template>
-  <template name="sfroute" value="route_name:&#10;    path:   /&#10;    defaults:  { _controller: Bundle:Controller:action }" toReformat="false" toShortenFQNames="true">
+  <template name="yamlroute" value="$NAME$:&#10;    path:   /$PATH$&#10;    defaults:  { _controller: $CONTROLLER$ }" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CONTROLLER" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -672,7 +501,6 @@
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="true" />
       <option name="JSON" value="true" />
-      <option name="Bash" value="true" />
       <option name="SQL" value="true" />
       <option name="CSS_PROPERTY_VALUE" value="true" />
       <option name="CSS_DECLARATION_BLOCK" value="true" />
