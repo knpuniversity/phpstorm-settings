@@ -426,7 +426,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="createquery" value="return $this-&gt;getEntityManager()&#10;            -&gt;createQuery(&quot;SELECT $ALIAS$&#10;                             FROM $ENTITY$ $ALIAS$&#10;                            WHERE $ALIAS$.$PROPERTY$ = :$PARAMETER$&quot;)&#10;            -&gt;setParameter(&quot;$PARAMETER$&quot;, $ARGUMENT$)&#10;            -&gt;getResult();" description="Query objects in repositories with DQL" toReformat="false" toShortenFQNames="true">
+  <template name="createquery" value="$this-&gt;getEntityManager()&#10;    -&gt;createQuery('SELECT $ALIAS$&#10;                   FROM $ENTITY$ $ALIAS$&#10;                   WHERE $ALIAS$.$PROPERTY$ = :$PARAMETER$')&#10;    -&gt;setParameter('$PARAMETER$', $ARGUMENT$)&#10;    -&gt;execute();" description="Query objects in repositories with DQL" toReformat="false" toShortenFQNames="true">
     <variable name="ALIAS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ENTITY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
