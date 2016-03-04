@@ -46,7 +46,7 @@ keymaps | Keyboard shortcuts (Appearance & Behavior > Keymap)
 templates | Live templates (Editor > Live Templates)
 
 Suppose you want the Symfony live templates from this repository - which are located
-at [templates/symfony.xml](https://github.com/knpuniversity/phpstorm-settings/blob/master/templates/symfony.xml).
+at [templates/knp_symfony.xml](https://github.com/knpuniversity/phpstorm-settings/blob/master/templates/knp_symfony.xml).
 Follow these steps:
 
 1. Download that file - you can clone the whole repository, or just download that
