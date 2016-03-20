@@ -19,6 +19,18 @@ be able to get new features, like live templates.
 
 ## Find your config folder
 
+For PhpStorm starting from 2016.1, replace 'YYYY.X' with the version number of PhpStorm.
+
+OS | Location
+---|---------
+Windows XP | `C:\Documents and Settings\<User name>\.PhpStormYYYY.X\config`
+Windows Vista | `C:\Users\<User name>\.PhpStormYYYY.X\config`
+Linux | `~/.PhpStormYYYY.X/config`
+OS X | `~/Library/Preferences/PhpStormYYYY.X`
+
+For PhpStorm before 2016.1, replace 'XX' with the version number of PhpStorm: WebIde80 for PhpStorm 8, WebIde90
+for PhpStorm 9, etc. 
+
 OS | Location
 ---|---------
 Windows XP | `C:\Documents and Settings\<User name>\.WebIdeXX\config`
@@ -26,9 +38,9 @@ Windows Vista | `C:\Users\<User name>\.WebIdeXX\config`
 Linux | `~/.WebIdeXX/config`
 OS X | `~/Library/Preferences/WebIdeXX`
 
-Replace 'XX' with the version number of PhpStorm: WebIde80 for PhpStorm 8, WebIde90
-for PhpStorm 9, etc. See
-[Project and IDE settings](https://www.jetbrains.com/phpstorm/help/project-and-ide-settings.html#d739736e149)
+
+See
+[Directories used by the IDE to store settings, caches, plugins and logs](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)
 for more information about the configuration directory structure.
 
 ## Download the files you want
