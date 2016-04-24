@@ -306,6 +306,14 @@ $NAME$:
     defaults:  { _controller: $CONTROLLER$ }
 ```
 
+#### trans
+
+Allows fast entering of translated messages
+
+```php
+{{ '$MESSAGE$'|trans }}
+```
+
 ## Credits
 
 First, a thanks to [nicwortel](https://github.com/nicwortel) for this https://github.com/nicwortel/phpstorm-ide-config
