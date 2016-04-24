@@ -306,6 +306,23 @@ $NAME$:
     defaults:  { _controller: $CONTROLLER$ }
 ```
 
+#### querybuilder
+
+Query objects in repositories using query builder
+
+```php
+$this->createQueryBuilder('$ALIAS$')
+            ->where('$ALIAS$.$PROPERTY$ = :$PARAMETER$')
+            ->setParameter('$PARAMETER$', $ARGUMENT$)
+            ->getQuery();
+```
+
+#### trans
+
+```php
+{{ '$MESSAGE$'|trans }}
+```
+
 ## Credits
 
 First, a thanks to [nicwortel](https://github.com/nicwortel) for this https://github.com/nicwortel/phpstorm-ide-config
