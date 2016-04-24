@@ -544,4 +544,12 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
+  <template name="trans" value="{{ '$MESSAGE$'|trans }}" toReformat="false" toShortenFQNames="true">
+    <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="true" />
+      <option name="HTML" value="true" />
+      <option name="Twig" value="true" />
+    </context>
+  </template>
 </templateSet>
