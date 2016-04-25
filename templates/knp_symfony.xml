@@ -1,5 +1,6 @@
 <templateSet group="symfony">
-  <template name="formhandle" value="$form-&gt;handleRequest($request);&#10;if ($form-&gt;isSubmitted() &amp;&amp; $form-&gt;isValid()) {&#10;    // todo - do some work, like saving stuff&#10;&#10;    $this-&gt;addFlash('success', '$SUCCESSMESSAGE$');&#10;&#10;    return $this-&gt;redirectToRoute('$ROUTENAME$', array());&#10;}" description="Adds controller form-handling code" toReformat="true" toShortenFQNames="true">
+  <template name="formhandle" value="$form = $this-&gt;createForm($CLASSNAME$::class);&#10;&#10;$form-&gt;handleRequest($request);&#10;if ($form-&gt;isSubmitted() &amp;&amp; $form-&gt;isValid()) {&#10;    // todo - do some work, like saving stuff&#10;&#10;    $this-&gt;addFlash('success', '$SUCCESSMESSAGE$');&#10;&#10;    return $this-&gt;redirectToRoute('$ROUTENAME$', array());&#10;}" description="Adds controller form-handling code" toReformat="true" toShortenFQNames="true">
+    <variable name="CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="SUCCESSMESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ROUTENAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
