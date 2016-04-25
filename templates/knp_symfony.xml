@@ -1,5 +1,5 @@
 <templateSet group="symfony">
-  <template name="formhandle" value="$form-&gt;handleRequest($request);&#10;if ($form-&gt;isValid()) {&#10;    // todo - do some work, like saving stuff&#10;&#10;    $this-&gt;addFlash('success', '$SUCCESSMESSAGE$');&#10;&#10;    return $this-&gt;redirectToRoute('$ROUTENAME$', array());&#10;}" description="Adds controller form-handling code" toReformat="true" toShortenFQNames="true">
+  <template name="formhandle" value="$form-&gt;handleRequest($request);&#10;if ($form-&gt;isValid()) {&#10;    // todo - do some work, like saving stuff&#10;&#10;    $this-&gt;addFlash('success', '$SUCCESSMESSAGE$');&#10;&#10;    return $this-&gt;redirectToRoute('$ROUTENAME$', []);&#10;}" description="Adds controller form-handling code" toReformat="true" toShortenFQNames="true">
     <variable name="SUCCESSMESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ROUTENAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -122,7 +122,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="rendertwig" value="return $this-&gt;render('$TEMPLATE$', array(&#10;    $END$&#10;));&#10;" description="Renders a Twig template from a controller" toReformat="true" toShortenFQNames="true">
+  <template name="rendertwig" value="return $this-&gt;render('$TEMPLATE$', [&#10;    $END$&#10;]);&#10;" description="Renders a Twig template from a controller" toReformat="true" toShortenFQNames="true">
     <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
