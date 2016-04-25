@@ -207,6 +207,16 @@ $NAME$:
         - '$ARG1$'
 ```
 
+#### servix
+
+Creates a XML service
+
+```xml
+<service id="$NAME$" class="$CLASS$">
+    <argument type="service" id="$ARG1$"/>
+</service>
+```
+
 #### tags
 
 Yaml service tags
