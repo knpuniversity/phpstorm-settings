@@ -241,6 +241,13 @@ $em = $this->getDoctrine()->getManager();
 $em->getRepository('$ENTITY$');
 ```
 
+#### findall
+
+```php
+$em = $this->getDoctrine()->getManager();
+$ENTITIES$ = $em->getRepository('$CLASSNAME$')->find$END$All();
+```
+
 #### doctrinecolumn
 
 Adds a property with @ORM annotations
