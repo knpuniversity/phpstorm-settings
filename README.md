@@ -94,13 +94,15 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Adds controller form-handling code
 
 ```php
+$form = $this->createForm($CLASSNAME$::class);
+
 $form->handleRequest($request);
-if ($form->isValid()) {
+if ($form->isSubmitted() && $form->isValid()) {
     // todo - do some work, like saving stuff
 
     $this->addFlash('success', '$SUCCESSMESSAGE$');
 
-    return $this->redirectToRoute('$ROUTENAME$', array());
+    return $this->redirectToRoute('$ROUTENAME$', []);
 }
 ```
 
@@ -136,9 +138,9 @@ $this->getDoctrine()
 Renders a Twig template from a controller
 
 ```php
-return $this->render('$TEMPLATE$', array(
+return $this->render('$TEMPLATE$', [
     $END$
-));
+]);
 
 ```
 
@@ -205,16 +207,6 @@ $NAME$:
     class: $CLASS$
     arguments:
         - '$ARG1$'
-```
-
-#### servix
-
-Creates a XML service
-
-```xml
-<service id="$NAME$" class="$CLASS$">
-    <argument type="service" id="$ARG1$"/>
-</service>
 ```
 
 #### tags
@@ -329,8 +321,20 @@ $this->createQueryBuilder('$ALIAS$')
 
 #### trans
 
+Allows fast entering of translated messages
+
 ```php
 {{ '$MESSAGE$'|trans }}
+```
+
+#### servix
+
+Creates a XML service
+
+```php
+<service id="$NAME$" class="$CLASS$">
+    <argument type="service" id="$ARG1$"/>
+</service>
 ```
 
 ## Credits
