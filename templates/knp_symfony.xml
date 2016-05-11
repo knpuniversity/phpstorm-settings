@@ -4,31 +4,7 @@
     <variable name="SUCCESSMESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ROUTENAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="formrow" value="{{ form_row(form.$FIELD$) }}" description="" toReformat="true" toShortenFQNames="true">
@@ -36,29 +12,7 @@
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
       <option name="Twig" value="true" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="formrowfull" value="&lt;div class=&quot;form-control&quot;&gt;&#10;    {{ form_label(form.$FIELD$) }}&#10;    {{ form_widget(form.$FIELD$) }}&#10;    {{ form_errors(form.$FIELD$) }}&#10;&lt;/div&gt;" description="Renders widget/label/errors" toReformat="true" toShortenFQNames="true">
@@ -66,29 +20,7 @@
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
       <option name="Twig" value="true" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="repofind" value="$this-&gt;getDoctrine()&#10;    -&gt;getRepository('$REPO$')-&gt;$METHOD$($ARG$);" description="Queries from a doctrine repository in a controller" toReformat="true" toShortenFQNames="true">
@@ -96,92 +28,20 @@
     <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="rendertwig" value="return $this-&gt;render('$TEMPLATE$', [&#10;    $END$&#10;]);&#10;" description="Renders a Twig template from a controller" toReformat="true" toShortenFQNames="true">
     <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="404unless" value="if ($CONDITION$) {&#10;    throw $this-&gt;createNotFoundException($MESSAGE$);&#10;}" description="404 if statement for your controller" toReformat="true" toShortenFQNames="true">
     <variable name="CONDITION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="include" value="{{ include('$TEMPLATE$') }}" description="" toReformat="true" toShortenFQNames="true">
@@ -189,89 +49,19 @@
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
       <option name="Twig" value="true" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="method" value="@Method(&quot;$METHOD$&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="METHOD" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
       <option name="PHP Comment" value="true" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="path" value="{{ path('$ROUTE$', { $END$ }) }}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="ROUTE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="true" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="render" value="{{ render(controller('$CONTROLLER$', { $END$ })) }}" description="" toReformat="true" toShortenFQNames="true">
@@ -279,60 +69,14 @@
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
       <option name="Twig" value="true" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="route" value="@Route(&quot;/$PATH$&quot;, name=&quot;$NAME$&quot;)" description="" toReformat="true" toShortenFQNames="true">
     <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="NAME" expression="snakeCase(PATH)" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
       <option name="PHP Comment" value="true" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="action" value="/**&#10; * @Route(&quot;/$PATH$&quot;, name=&quot;$ROUTE_NAME$&quot;)&#10; */&#10;public function $NAME$Action()&#10;{&#10;    $END$&#10;}" description="Creates a controller action." toReformat="true" toShortenFQNames="true">
@@ -340,31 +84,7 @@
     <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ROUTE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="service" value="$NAME$:&#10;    class: $CLASS$&#10;    arguments:&#10;        - '$ARG1$'" description="Creates a YML service" toReformat="true" toShortenFQNames="true">
@@ -372,60 +92,12 @@
     <variable name="NAME" expression="snakeCase(CLASS)" defaultValue="service_name" alwaysStopAt="true" />
     <variable name="ARG1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
   <template name="tags" value="tags:&#10;    - { name: $TAGNAME$ }" description="Yaml service tags" toReformat="true" toShortenFQNames="true">
     <variable name="TAGNAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
       <option name="OTHER" value="true" />
     </context>
   </template>
@@ -518,31 +190,7 @@
     <variable name="PARAMETER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGUMENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JSON" value="false" />
-      <option name="SQL" value="false" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
       <option name="PHP" value="true" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
   <template name="trans" value="{{ '$MESSAGE$'|trans }}" toReformat="false" toShortenFQNames="true" description="Allows fast entering of translated messages">
@@ -558,29 +206,9 @@
     <variable name="CLASS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARG1" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="true" />
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="true" />
-      <option name="JSON" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
-      <option name="Twig" value="false" />
-      <option name="CUCUMBER_FEATURE_FILE" value="false" />
-      <option name="JAVA_SCRIPT" value="false" />
-      <option name="JS_EXPRESSION" value="false" />
-      <option name="JSX_HTML" value="false" />
-      <option name="JS_STATEMENT" value="false" />
-      <option name="TypeScript" value="false" />
-      <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
-      <option name="PHP String Literal" value="false" />
-      <option name="HAML" value="false" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
 </templateSet>

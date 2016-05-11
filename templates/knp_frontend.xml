@@ -7,19 +7,10 @@
       <option name="XML" value="true" />
       <option name="XML_TEXT" value="true" />
       <option name="JSON" value="true" />
-      <option name="JSP" value="false" />
-      <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
-      <option name="CSS_RULESET_LIST" value="false" />
-      <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
       <option name="JS_STATEMENT" value="true" />
-      <option name="TypeScript" value="false" />
-      <option name="PHP" value="false" />
-      <option name="PHP Comment" value="false" />
       <option name="PHP String Literal" value="true" />
-      <option name="OTHER" value="false" />
     </context>
   </template>
 </templateSet>
