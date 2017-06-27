@@ -107,7 +107,9 @@
     <variable name="PROPERTY" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARAMETER" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGUMENT" expression="" defaultValue="" alwaysStopAt="true" />
-    <context />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
   </template>
   <template name="getem" value="$em = $this-&gt;getDoctrine()-&gt;getManager();" toReformat="false" toShortenFQNames="true">
     <context>
