@@ -28,6 +28,9 @@ Windows Vista | `C:\Users\<User name>\.PhpStormYYYY.X\config`
 Linux | `~/.PhpStormYYYY.X/config`
 OS X | `~/Library/Preferences/PhpStormYYYY.X`
 
+ℹ️ **Note:** Sometimes, with newer versions of PHPStorm and Windows, you might have to change the directory for
+`C:\Users\{Your user name}\.PhpStormYYYY.X\config\jba_config\templates` instead.
+ 
 For PhpStorm before 2016.1, replace 'XX' with the version number of PhpStorm: WebIde80 for PhpStorm 8, WebIde90
 for PhpStorm 9, etc. 
 
