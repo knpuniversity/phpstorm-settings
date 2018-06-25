@@ -30,6 +30,9 @@ OS X | `~/Library/Preferences/PhpStormYYYY.X`
 
 ℹ️ **Note:** Sometimes, with newer versions of PHPStorm and Windows, you might have to change the directory for
 `C:\Users\{Your user name}\.PhpStormYYYY.X\config\jba_config\templates` instead.
+
+🔄 If you are using the [Settings repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) feature, the directory you have to upload your templates to is different too:<br>
+`C:\Users\<User name>\.PhpStormYYYY.X\config\settingsRepository\repository\templates`.
  
 For PhpStorm before 2016.1, replace 'XX' with the version number of PhpStorm: WebIde80 for PhpStorm 8, WebIde90
 for PhpStorm 9, etc. 
