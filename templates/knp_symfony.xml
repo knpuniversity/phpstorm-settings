@@ -122,9 +122,11 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="doctrinecolumn" value="/**&#10; * @ORM\Column(type=&quot;$TYPE$&quot;)&#10; */&#10;private $$$PROPERTYNAME$;" description="Adds a property with @ORM annotations" toReformat="false" toShortenFQNames="true">
+  <template name="doctrinecolumn" value="/**&#10; * @var $PHPTYPE$&#10; *&#10; * @ORM\Column(name=&quot;$FIELDNAME$&quot;, type=&quot;$TYPE$&quot;)&#10; */&#10;private $$$PROPERTYNAME$;" description="Adds a property with @ORM annotations" toReformat="true" toShortenFQNames="true">
     <variable name="PROPERTYNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELDNAME" expression="snakeCase(PROPERTYNAME)" defaultValue="" alwaysStopAt="true" />
     <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PHPTYPE" expression="snakeCase(TYPE)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
