@@ -10,73 +10,13 @@ something you love about your PhpStorm setup? Create a pull request and share it
 
 ## Installation
 
-Before you do this, make sure PhpStorm is not running, or it will overwrite the changed
-files before shutting down.
+1. Go to *PhpStorm Preferences | Tools | Settings Repository*
 
-Your installation of PhpStorm has various directories and configuration files. By
-putting some configuration files from this repository into the right place, you'll
-be able to get new features, like live templates.
+2. Add Read-only Source https://github.com/knpuniversity/phpstorm-settings
 
-## Find your config folder
+3. Restart PhpStorm
 
-For PhpStorm starting from 2016.1, replace 'YYYY.X' with the version number of PhpStorm.
-
-OS | Location
----|---------
-Windows XP | `C:\Documents and Settings\<User name>\.PhpStormYYYY.X\config`
-Windows Vista | `C:\Users\<User name>\.PhpStormYYYY.X\config`
-Linux | `~/.PhpStormYYYY.X/config`
-OS X | `~/Library/Preferences/PhpStormYYYY.X`
-
-ℹ️ **Note:** Sometimes, with newer versions of PHPStorm and Windows, you might have to change the directory for
-`C:\Users\{Your user name}\.PhpStormYYYY.X\config\jba_config\templates` instead.
-
-🔄 If you are using the [Settings repository](https://www.jetbrains.com/help/phpstorm/settings-tools-settings-repository.html) feature, the directory you have to upload your templates to is different too:<br>
-`C:\Users\<User name>\.PhpStormYYYY.X\config\settingsRepository\repository\templates`.
- 
-For PhpStorm before 2016.1, replace 'XX' with the version number of PhpStorm: WebIde80 for PhpStorm 8, WebIde90
-for PhpStorm 9, etc. 
-
-OS | Location
----|---------
-Windows XP | `C:\Documents and Settings\<User name>\.WebIdeXX\config`
-Windows Vista | `C:\Users\<User name>\.WebIdeXX\config`
-Linux | `~/.WebIdeXX/config`
-OS X | `~/Library/Preferences/WebIdeXX`
-
-
-See
-[Directories used by the IDE to store settings, caches, plugins and logs](https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs)
-for more information about the configuration directory structure.
-
-## Download the files you want
-
-Inside your config folder, you'll see a number of directories:
-
-Directory | Contents
-----------|---------
-codestyles | Code Style settings (Editor > Code Style)
-colors | Colors & Fonts settings (Editor > Colors & Fonts)
-fileTemplates | File and Code Templates (Editor > File and Code Templates)
-filetypes | File Types (Editor > File Types)
-inspection | Inspection profiles (Editor > Inspections)
-keymaps | Keyboard shortcuts (Appearance & Behavior > Keymap)
-templates | Live templates (Editor > Live Templates)
-
-Suppose you want the Symfony live templates from this repository - which are located
-at [templates/knp_symfony.xml](https://github.com/knpuniversity/phpstorm-settings/blob/master/templates/knp_symfony.xml).
-Follow these steps:
-
-1. Download that file - you can clone the whole repository, or just download that
-one file.
-
-1. Move the file into the `templates/` subdirectory of your config folder
-
-1. Start PhpStorm (because of course, you closed it before trying all of this...
-didn't you???)
-
-That's it! In the PhpStorm Settings, under "Editor > Live Templates", you should
-see the new "symfony" live templates.
+You can see and manage all the snippets under the *Preferences | Editor | Live Templates* 
 
 ## Live Templates
 
