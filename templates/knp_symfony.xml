@@ -44,7 +44,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="include" value="{{ include('$TEMPLATE$') }}" description="" toReformat="true" toShortenFQNames="true">
+  <template name="include" value="{% include('$TEMPLATE$') %}" description="" toReformat="true" toShortenFQNames="true">
     <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="true" />
